@@ -1,68 +1,56 @@
-# 🧠 Internal Knowledge Base Q&A Bot
+🚀 Mini Projects Portfolio
+Welcome to my Mini Projects Repository!
+Here, I share a collection of compact but impactful projects exploring Data Science, Machine Learning, LLMs, MLOps, and more.
+Each project tackles a real-world problem with a focus on innovation, practicality, and hands-on learning.
 
-A smart chatbot powered by **Gemma 3 via Ollama** that helps employees navigate company policy documents with ease. This Retrieval-Augmented Generation (RAG) system enables natural language Q&A over categorized internal policies and documents.
+📚 List of Projects
 
----
+Project	Objective	Tech Stack	Status
+Dataset Quality Checking System	Validate vendor-uploaded datasets with human-friendly feedback.	Python, Pandas, Flask	✅ Completed
+Internal Knowledge Base Q&A Bot	Build a chatbot answering company policy questions using LLM and RAG.	LangChain, Ollama, ChromaDB	🛠️ In Progress
+Excel LLM Evaluator	Evaluate LLM-generated outputs on Excel files dynamically.	Python, G-Eval, Pandas	✅ Completed
+RAG System for Restaurant Dataset	Answer restaurant-related queries using a retrieval-augmented system.	LangChain, Ollama, ChromaDB	✅ Completed
+MCP Model 2 (Model Context Protocol)	Implement dynamic memory (Add/Read) for smarter LLM responses.	Python, Claude API	✅ Completed
+🛠️ Tech Stack Overview
+Programming: Python, Java
 
-## 🎯 Goal
+Frameworks & Tools: Flask, Spring Boot, LangChain, Ollama, ChromaDB
 
-To create an internal, secure, and intelligent chatbot that:
-- Understands natural questions from employees
-- Retrieves accurate information from internal policy files
-- Enhances productivity and reduces manual HR queries
+Databases: MySQL, Vector Stores
 
----
+Machine Learning: Scikit-learn, Ensemble Models
 
-## 🚀 Current Status
+Large Language Models: Gemma 3, Claude (Anthropic)
 
-🔄 **In Progress**  
-- ✅ Document ingestion and vectorization module completed  
-- 🛠️ Retrieval and response generation pipeline under development  
-- 🧩 Integration with company policy JSON files in progress  
+Others: G-Eval, Pandas, Matplotlib
 
----
+🚧 Challenges Faced
+Designing human-understandable outputs for technical validations
 
-## 🛠️ Tech Stack
+Building memory mechanisms for LLMs (context persistence)
 
-- **LLM:** Gemma 3 (via Ollama)
-- **Framework:** LangChain
-- **Vector Store:** Chroma DB
-- **Language:** Python
-- **File Format:** Structured JSON policy documents
+Preventing hallucinations in RAG-based systems
 
----
+Dynamic evaluation of model outputs against ground truth
 
+Balancing simplicity and scalability in every mini-project
 
----
+🎯 What I Achieved
+Mastered quick prototyping and end-to-end system building
 
-## 🔍 How It Works
+Improved ability to handle LLM workflows, retrieval systems, and evaluation pipelines
 
-1. **Document Loader:** Parses and categorizes structured policy files  
-2. **Vectorization:** Embeds content using Ollama-powered Gemma 3 LLM  
-3. **Retrieval:** Uses semantic search to find relevant chunks  
-4. **Answering:** Responds to user queries using RAG pipeline
+Learned modular code structuring for easier scaling
 
----
+Built confidence in deploying AI/ML-backed mini tools
 
-## 🧪 Example Use Cases
+🤝 Let's Connect!
+Always open to collaboration, innovation, and new challenges in tech, finance, and sports analytics!
 
-- _“How many days of paid leave are allowed per year?”_  
-- _“What is the company policy on remote work?”_  
-- _“Who should I contact for IT equipment reimbursement?”_
+📧 harshagarwal244@email.com
 
----
+💼 LinkedIn www.linkedin.com/in/harsh-shah-85a9a322a
 
-## 📦 Setup Instructions
+🏓 Outside of tech: Table Tennis, Swimming, and Trading Enthusiast!
 
-```bash
-# Clone the repo
-git clone https://github.com/your-username/knowledge-bot.git
-cd knowledge-bot
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the chatbot
-python main.py
-
-
+Made with 💻, 🎯, and 🚀 by Harsh Shah.
