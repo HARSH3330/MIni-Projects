@@ -1,22 +1,16 @@
 import pandas as pd
 import json
-import os
 
-def parse_file(file_path):
-    ext = os.path.splitext(file_path)[1]
-    
-    if ext == ".csv":
-        df = pd.read_csv(file_path)
-        return df.head().to_string()
-    elif ext == ".xlsx":
-        df = pd.read_excel(file_path)
-        return df.head().to_string()
-    elif ext == ".json":
-        with open(file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return json.dumps(data, indent=2)
-    elif ext in [".txt", ".md", ".py"]:
-        with open(file_path, "r", encoding="utf-8") as f:
-            return f.read()
+def parse_file(filename, content):
+    if filename.endswith(".py"):
+        return content.decode()
+    elif filename.endswith(".json"):
+        return json.dumps(json.loads(content), indent=2)
+    elif filename.endswith(".csv"):
+        df = pd.read_csv(pd.compat.StringIO(content.decode()))
+        return df.head().to_markdown()
+    elif filename.endswith(".txt") or filename.endswith(".md"):
+        return content.decode()
     else:
         return "Unsupported file type."
+
